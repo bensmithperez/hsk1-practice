@@ -534,6 +534,7 @@ function borrar() {
     caracteres.innerHTML = "<p></p>";
     pinyin.innerHTML = "<p></p>";
     definicion.innerHTML = "<p></p>";
+    inputUsuario.value = "";
 }
 
 function noSe() {
