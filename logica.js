@@ -547,6 +547,11 @@ function chequear() {
     if (respuestaCorrecta.includes("｜")) {
         respuestaCorrecta = respuestaCorrecta.split("｜");
     }
+
+    if (respuestaCorrecta.includes("（")){
+        respuestaCorrecta = respuestaCorrecta.split("（")[0];
+    }
+    
     if (respuestaCorrecta.includes(respuestaUsuario) && respuestaUsuario != "") {
         //correcto - bien, pasamos a la próxima
         console.log("correcto");
