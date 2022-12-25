@@ -505,6 +505,7 @@ const obj = JSON.parse(text);
 let indiceActual = 1;
 let indiceMax = 500;
 let indiceMin = 1;
+let ordenDeTarjetas = new Set();
 
 let caracteres = document.getElementById("caracteres");
 let definicion = document.getElementById("definicion");
@@ -514,12 +515,25 @@ let botonChequear = document.getElementById("boton_chequear");
 let inputUsuario = document.getElementById("inputUsuario");
 
 function cargarTarjetaActual() {
-    caracteres.innerHTML = "<p>" + obj[indiceActual]["word"] + "</p>";
+    console.log("ordenDeTarjetas:" + ordenDeTarjetas);
+    console.log("indiceActual:" + indiceActual);
+    console.log("tarjetaActual:" + [...ordenDeTarjetas][indiceActual]);
+
+    console.log([...ordenDeTarjetas][indiceActual]);
+    caracteres.innerHTML = "<p>" + obj[[...ordenDeTarjetas][indiceActual]]["word"] + "</p>";
 }
 
 function mostrarRespuesta() {
-    pinyin.innerHTML = "<p>" + obj[indiceActual]["pinyin"] + "</p>";
-    definicion.innerHTML = "<p>" + obj[indiceActual]["meaning"] + "</p>";
+    pinyin.innerHTML = "<p>" + obj[[...ordenDeTarjetas][indiceActual]]["pinyin"] + "</p>";
+    definicion.innerHTML = "<p>" + obj[[...ordenDeTarjetas][indiceActual]]["meaning"] + "</p>";
+}
+
+function generarOrdenDeTarjetas(rango, cantidad) {
+    while (ordenDeTarjetas.size < cantidad) {
+        ordenDeTarjetas.add(Math.floor(Math.random() * (rango - 1 + 1) + 1));
+    }
+    // console.log(ordenDeTarjetas);
+    // return [...ordenDeTarjetas];
 }
 
 function proximaTarjeta() {
@@ -543,15 +557,15 @@ function noSe() {
 
 function chequear() {
     respuestaUsuario = inputUsuario.value;
-    respuestaCorrecta = obj[indiceActual]["word"];
+    respuestaCorrecta = obj[[...ordenDeTarjetas][indiceActual]]["word"];
     if (respuestaCorrecta.includes("｜")) {
         respuestaCorrecta = respuestaCorrecta.split("｜");
     }
 
-    if (respuestaCorrecta.includes("（")){
+    if (respuestaCorrecta.includes("（")) {
         respuestaCorrecta = respuestaCorrecta.split("（")[0];
     }
-    
+
     if (respuestaCorrecta.includes(respuestaUsuario) && respuestaUsuario != "") {
         //correcto - bien, pasamos a la próxima
         console.log("correcto");
@@ -565,7 +579,7 @@ function chequear() {
     }
 }
 
-
+generarOrdenDeTarjetas(500, 500);
 cargarTarjetaActual();
 
 //para los botones
