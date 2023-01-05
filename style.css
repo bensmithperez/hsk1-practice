@@ -6,6 +6,15 @@
     padding: 0;
 }
 
+nav{
+    display: flex;
+    list-style: none;
+}
+
+nav>li{
+    padding: 0 1em;
+}
+
 .parte-1{
     display: flex;
     flex-direction: column;
