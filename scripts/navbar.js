@@ -4,15 +4,23 @@ function cargarListaDeLinks(urlDeEstaPagina) {
         sub: 1,
         header: 2,
     }
-    let nombres = ["Todo HSK1", "Números", "Lesson 1", "Vocab", "Sentences"];
+    let nombres = ["Inicio", "Números", "Lesson 1", "Vocab", "Sentences", "Lesson 2", "Vocab", "Sentences"];
 
-    let urls = [{ "index.html": tiposDeLink.main }, { "numeros.html": tiposDeLink.main }, { "lesson1": tiposDeLink.header }, { "lesson1-vocab.html": tiposDeLink.sub }, { "lesson1-sentences.html": tiposDeLink.sub }];
+    let urls = [
+        { "index.html": tiposDeLink.main }, 
+        { "numeros.html": tiposDeLink.main }, 
+        { "lesson1": tiposDeLink.header }, 
+        { "lesson1-vocab.html": tiposDeLink.sub }, 
+        { "lesson1-sentences.html": tiposDeLink.sub },
+        { "lesson2": tiposDeLink.header }, 
+        { "lesson2-vocab.html": tiposDeLink.sub }, 
+        { "lesson2-sentences.html": tiposDeLink.sub }];
     let menuCompleto = ``;
     index = 0;
     for (const url of urls) {
         for (const [urlPagina, tipoLink] of Object.entries(url)) {
             urlPorUsar = "";
-            idParaElBanco = "pagina-"+urlPagina.replace(".html","");
+            idParaElBanco = "pagina-" + urlPagina.replace(".html", "");
             // pongo sin urls los que son headers o la url actual
             if (urlPagina == urlDeEstaPagina || tipoLink == tiposDeLink.header) {
                 urlPorUsar = "#";
@@ -20,7 +28,7 @@ function cargarListaDeLinks(urlDeEstaPagina) {
                 urlPorUsar = urlPagina;
             }
 
-            menuCompleto += `<a id="`+idParaElBanco+`" href="` + urlPorUsar + `" class="menu-principal-link`;
+            menuCompleto += `<a id="` + idParaElBanco + `" href="` + urlPorUsar + `" class="menu-principal-link`;
 
             // agrego clases css a los que corresponda
             switch (tipoLink) {
@@ -38,7 +46,7 @@ function cargarListaDeLinks(urlDeEstaPagina) {
             }
 
             // agrego clase para mostrar como seleccionado
-            if (urlPagina == urlDeEstaPagina){
+            if (urlPagina == urlDeEstaPagina) {
                 menuCompleto += ` item-menu-seleccionado`;
             }
 
@@ -50,6 +58,6 @@ function cargarListaDeLinks(urlDeEstaPagina) {
     document.getElementById("menu-principal").innerHTML = menuCompleto;
 }
 
-function marcarHeader(id){
+function marcarHeader(id) {
     document.getElementById(id).classList.add("header-seleccionado");
 }

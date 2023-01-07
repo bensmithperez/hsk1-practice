@@ -114,6 +114,10 @@ nav>li{
     font-size: 2rem;
 }
 
+.inputUsuario{
+    content: "hola";
+}
+
 .botones{
     display: flex;
     width: 100%;

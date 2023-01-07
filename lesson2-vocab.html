@@ -18,18 +18,20 @@
                 menuPrincipal.classList.toggle("hidden");
             }
         </script>
-        <nav id="menu-principal" class="menu-principal"></nav>
+        <nav id="menu-principal" class="menu-principal hidden"></nav>
         <script src="scripts/navbar.js"></script>
-        <script>cargarListaDeLinks("index.html");</script>
+        <script>
+            cargarListaDeLinks("lesson2-vocab.html");
+            marcarHeader("pagina-lesson2");
+        </script>
     </header>
     <main>
-        <!-- <div class="datos">
+        <div class="datos">
             <div class="tarjeta-actual" id="tarjeta-actual">
                 <p></p>
             </div>
         </div>
         <div class="parte-1">
-            este funciona mal, no lo usen
             <div class="caracteres" id="caracteres">
                 <p></p>
             </div>
@@ -44,12 +46,13 @@
             <input type="text" class="inputUsuario" id="inputUsuario" onkeydown="verTecla(event)">
         </div>
         <div class="botones">
+            <!-- <button class="boton-"></button> -->
             <button class="botones_boton boton_no-se" id="boton_no-se" onclick="noSe()">No sé</button>
             <button class="botones_boton boton_chequear" id="boton_chequear" onclick="chequear()">Chequear</button>
             <button class="botones_boton boton_siguiente esconder_boton" id="boton_siguiente" onclick="clickEnSiguiente()">Siguiente</button>
-        </div> -->
+        </div>
     </main>
-    <script src="./datos/todoHsk1.js"></script>
+    <script src="./datos/lesson2-vocab.js"></script>
     <script src="scripts/logica.js"></script>
 </body>
 

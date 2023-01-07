@@ -27,4 +27,5 @@ let listaCompletaDeDatos = '[' +
     '{"id":25,"word":"我不认识他","pinyin":"wǒ bù rèn shí tā","meaning":"i don\'t know him"},' +
     '{"id":26,"word":"你喜欢他吗","pinyin":"nǐ xǐ huān tā má","meaning":"do you like him?"},' +
     '{"id":27,"word":"我喜欢他","pinyin":"wǒ xǐ huān tā","meaning":"i like him"},' +
-    '{"id":28,"word":"我不喜欢他","pinyin":"wǒ bù xǐ huān tā","meaning":"i don\'t like him"}]';
+    '{"id":28,"word":"我不喜欢他","pinyin":"wǒ bù xǐ huān tā","meaning":"i don\'t like him"}'+
+    ']';

@@ -25,4 +25,5 @@ let listaCompletaDeDatos = '[' +
     '{"id":23,"word":"是","pinyin":"shì","meaning":"yes"},' +
     '{"id":24,"word":"喜欢","pinyin":"xǐhuan","meaning":"like"},' +
     '{"id":25,"word":"不","pinyin":"bù","meaning":"No"},' +
-    '{"id":26,"word":"早上","pinyin":"zǎoshang","meaning":"Morning"}]';
+    '{"id":26,"word":"早上","pinyin":"zǎoshang","meaning":"Morning"}'+
+    ']';

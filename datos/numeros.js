@@ -11,4 +11,5 @@ let listaCompletaDeDatos = '[' +
     '{"id":9,"word":"八","pinyin":"bā","meaning":"Eight"},' +
     '{"id":10,"word":"九","pinyin":"jiǔ","meaning":"Nine"},' +
     '{"id":11,"word":"十","pinyin":"shí","meaning":"Ten"},' +
-    '{"id":12,"word":"百","pinyin":"bǎi","meaning":"hundred"}]';
+    '{"id":12,"word":"百","pinyin":"bǎi","meaning":"hundred"}'+
+    ']';
