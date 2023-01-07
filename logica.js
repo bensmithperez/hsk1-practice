@@ -5,6 +5,7 @@ let indiceActual = 0;
 let indiceMin = 0;
 let ordenDeTarjetas = new Set();
 
+let datosTarjetaActual = document.getElementById("tarjeta-actual");
 let caracteres = document.getElementById("caracteres");
 let definicion = document.getElementById("definicion");
 let pinyin = document.getElementById("pinyin");
@@ -19,6 +20,7 @@ function cargarTarjetaActual() {
 
     console.log([...ordenDeTarjetas][indiceActual]);
     caracteres.innerHTML = "<p>" + obj[[...ordenDeTarjetas][indiceActual]]["word"] + "</p>";
+    datosTarjetaActual.innerHTML = "<p>" + (indiceActual+1) + " de " + indiceMax + "</p>";
 }
 
 function mostrarRespuesta() {

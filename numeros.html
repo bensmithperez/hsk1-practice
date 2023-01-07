@@ -11,13 +11,23 @@
 
 <body>
     <header>
-        <nav>
-            <li><a href="index.html">Todo HSK1</a></li>
-            <li>Números</li>
-            <li><a href="lesson1-vocab.html">Lesson 1</a></li>
-        </nav>
+        <button class="menu-principal-btn" onclick="togglemenuPrincipal()">Ver secciones</button>
+        <script>
+            function togglemenuPrincipal() {
+                var menuPrincipal = document.querySelector(".menu-principal");
+                menuPrincipal.classList.toggle("hidden");
+            }
+        </script>
+        <nav id="menu-principal" class="menu-principal hidden"></nav>
+        <script src="./navbar.js"></script>
+        <script>cargarListaDeLinks("numeros.html");</script>
     </header>
     <main>
+        <div class="datos">
+            <div class="tarjeta-actual" id="tarjeta-actual">
+                <p></p>
+            </div>
+        </div>
         <div class="parte-1">
             <div class="caracteres" id="caracteres">
                 <p></p>
