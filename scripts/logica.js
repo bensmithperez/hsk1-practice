@@ -11,16 +11,19 @@ let definicion = document.getElementById("definicion");
 let pinyin = document.getElementById("pinyin");
 let botonNoSe = document.getElementById("boton_no-se");
 let botonChequear = document.getElementById("boton_chequear");
+let botonSiguiente = document.getElementById("boton_siguiente");
 let inputUsuario = document.getElementById("inputUsuario");
 
 function cargarTarjetaActual() {
     console.log("ordenDeTarjetas:" + ordenDeTarjetas);
     console.log("indiceActual:" + indiceActual);
-    console.log("tarjetaActual:" + [...ordenDeTarjetas][indiceActual]);
+    console.log("tarjetaActual: " + [...ordenDeTarjetas][indiceActual]);
+    console.log("word: |" + obj[[...ordenDeTarjetas][indiceActual]]["word"] + "|");
+    console.log("pinyin: |" + obj[[...ordenDeTarjetas][indiceActual]]["pinyin"] + "|");
+    console.log("meaning: |" + obj[[...ordenDeTarjetas][indiceActual]]["meaning"] + "|");
 
-    console.log([...ordenDeTarjetas][indiceActual]);
     caracteres.innerHTML = "<p>" + obj[[...ordenDeTarjetas][indiceActual]]["word"] + "</p>";
-    datosTarjetaActual.innerHTML = "<p>" + (indiceActual+1) + " de " + indiceMax + "</p>";
+    datosTarjetaActual.innerHTML = "<p>" + (indiceActual + 1) + " de " + indiceMax + "</p>";
 }
 
 function mostrarRespuesta() {
@@ -29,7 +32,7 @@ function mostrarRespuesta() {
 }
 
 function generarOrdenDeTarjetas(rango, cantidad) {
-    var i=0;
+    var i = 0;
     while (ordenDeTarjetas.size < cantidad) {
         ordenDeTarjetas.add(Math.floor(Math.random() * (rango - 1 + 1)));
         // ordenDeTarjetas.add(i);
@@ -38,7 +41,7 @@ function generarOrdenDeTarjetas(rango, cantidad) {
 }
 
 function proximaTarjeta() {
-    if (indiceActual < indiceMax-1) {
+    if (indiceActual < indiceMax - 1) {
         indiceActual += 1;
     } else {
         indiceActual = indiceMin;
@@ -59,23 +62,8 @@ function noSe() {
 function chequear() {
     respuestaUsuario = inputUsuario.value;
     respuestaCorrecta = obj[[...ordenDeTarjetas][indiceActual]]["word"];
-    // proximaTarjeta();
-    // borrar();
-    // cargarTarjetaActual();
-    if (respuestaCorrecta.includes("｜")) {
-        respuestaCorrecta = respuestaCorrecta.split("｜");
-    }
-
-    if (respuestaCorrecta.includes("（")) {
-        respuestaCorrecta = respuestaCorrecta.split("（")[0];
-    }
-
-    if (respuestaCorrecta.includes(respuestaUsuario) && respuestaUsuario != "") {
-        //correcto - bien, pasamos a la próxima
-        console.log("correcto");
-        proximaTarjeta();
-        borrar();
-        cargarTarjetaActual();
+    if (respuestaCorrecta == respuestaUsuario) {
+        mostrarRespuestaBotonSiguiente();
     } else {
         //incorrecto - mal, muestro respuesta
         console.log("incorrecto");
@@ -86,11 +74,42 @@ function chequear() {
 generarOrdenDeTarjetas(indiceMax, indiceMax);
 cargarTarjetaActual();
 
+
+function botonesControl() {
+    botonChequear.classList.remove("esconder_boton");
+    botonNoSe.classList.remove("esconder_boton");
+    botonSiguiente.classList.add("esconder_boton");
+}
+
+function botonesSiguiente() {
+    botonChequear.classList.add("esconder_boton");
+    botonNoSe.classList.add("esconder_boton");
+    botonSiguiente.classList.remove("esconder_boton");
+}
+
+function mostrarRespuestaBotonSiguiente() {
+    //correcto - bien, pasamos a la próxima
+    console.log("correcto");
+    botonesSiguiente();
+    mostrarRespuesta();
+}
+
+function clickEnSiguiente() {
+    proximaTarjeta();
+    borrar();
+    cargarTarjetaActual();
+    botonesControl();
+}
+
 //para los botones
 function verTecla(event) {
     if (event.key === "Enter") {
         event.preventDefault();
-        botonChequear.click();
+        if (botonChequear.classList.contains("esconder_boton")) {
+            botonSiguiente.click();
+        } else {
+            botonChequear.click();
+        }
     }
     //falta alguna key para "no sé"
 }

@@ -124,10 +124,16 @@ nav>li{
 
 .boton_no-se{
     width: 50%;
-
 }
 
 .boton_chequear{
     width: 50%;
+}
 
+.boton_siguiente {
+    width: 100%;
+}
+
+.esconder_boton {
+    display: none;
 }

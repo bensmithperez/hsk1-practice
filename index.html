@@ -19,7 +19,7 @@
             }
         </script>
         <nav id="menu-principal" class="menu-principal hidden"></nav>
-        <script src="./navbar.js"></script>
+        <script src="scripts/navbar.js"></script>
         <script>cargarListaDeLinks("index.html");</script>
     </header>
     <main>
@@ -29,6 +29,7 @@
             </div>
         </div>
         <div class="parte-1">
+            este funciona mal, no lo usen
             <div class="caracteres" id="caracteres">
                 <p></p>
             </div>
@@ -44,12 +45,13 @@
         </div>
         <div class="botones">
             <!-- <button class="boton-"></button> -->
-            <button class="boton_no-se" id="boton_no-se" onclick="noSe()">No sé</button>
-            <button class="boton_chequear" id="boton_chequear" onclick="chequear()">Chequear</button>
+            <button class="botones_boton boton_no-se" id="boton_no-se" onclick="noSe()">No sé</button>
+            <button class="botones_boton boton_chequear" id="boton_chequear" onclick="chequear()">Chequear</button>
+            <button class="botones_boton boton_siguiente esconder_boton" id="boton_siguiente" onclick="clickEnSiguiente()">Siguiente</button>
         </div>
     </main>
     <script src="./datos/todoHsk1.js"></script>
-    <script src="logica.js"></script>
+    <script src="scripts/logica.js"></script>
 </body>
 
 </html>
