@@ -19,8 +19,8 @@ let listaCompletaDeDatos = '[' +
     '{"id":17,"word":"英语","pinyin":"yīngyǔ","meaning":"english language"},'+
     '{"id":18,"word":"日文","pinyin":"rìwén","meaning":"japanese language"},'+
     '{"id":19,"word":"日语","pinyin":"rìyǔ","meaning":"japanese languaje"},'+
-    '{"id":20,"word":"发文","pinyin":"fāwén","meaning":"french language"},'+
-    '{"id":21,"word":"发语","pinyin":"fāyù","meaning":"french language"},'+
+    '{"id":20,"word":"法文","pinyin":"fāwén","meaning":"french language"},'+
+    '{"id":21,"word":"法语","pinyin":"fāyù","meaning":"french language"},'+
     '{"id":22,"word":"西班牙文","pinyin":"xībānyáwén","meaning":"spanish language"},'+
     '{"id":23,"word":"西班牙语","pinyin":"xībānyáyǔ","meaning":"spanish language"},'+
     '{"id":24,"word":"泰文","pinyin":"tàiwén","meaning":"thai language"},'+
