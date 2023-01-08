@@ -12,20 +12,12 @@ let listaCompletaDeDatos = '[' +
     '{"id":10,"word":"你是哪里人","pinyin":"nǐ shì nǎ lǐ rén","meaning":"which place are you from?"},' +
     '{"id":11,"word":"我是中国人","pinyin":"wǒ shì zhōng guó rén","meaning":"i\'m from china / i\'m chinese"},' +
     '{"id":12,"word":"我不是美国人","pinyin":"wǒ bù shì měi guó rén","meaning":"i\'m not from china"},' +
-    '{"id":13,"word":"美国","pinyin":"měi guó","meaning":"USA"},' +
-    '{"id":14,"word":"英国","pinyin":"yīng guó","meaning":"the UK"},' +
-    '{"id":15,"word":"法国","pinyin":"fǎ guó","meaning":"France"},' +
-    '{"id":16,"word":"德国","pinyin":"dé guó","meaning":"Germany"},' +
-    '{"id":17,"word":"西班牙","pinyin":"xī bān yá","meaning":"Spain"},' +
-    '{"id":18,"word":"日本","pinyin":"rì běn","meaning":"Japan"},' +
-    '{"id":19,"word":"泰国","pinyin":"tài guó","meaning":"Thailand"},' +
-    '{"id":20,"word":"危地马拉","pinyin":"wēi dì mǎ lā","meaning":"Guatemala"},' +
-    '{"id":21,"word":"很高兴认识你！","pinyin":"hěn gāo xīng rèn shí nǐ","meaning":"nice to meet you"},' +
-    '{"id":22,"word":"我也是！","pinyin":"wǒ yě shì","meaning":"me too!"},' +
-    '{"id":23,"word":"你认识他吗","pinyin":"nǐ rèn shí tā má","meaning":"do you know him?"},' +
-    '{"id":24,"word":"我认识他","pinyin":"wǒ rèn shí tā","meaning":"i know him"},' +
-    '{"id":25,"word":"我不认识他","pinyin":"wǒ bù rèn shí tā","meaning":"i don\'t know him"},' +
-    '{"id":26,"word":"你喜欢他吗","pinyin":"nǐ xǐ huān tā má","meaning":"do you like him?"},' +
-    '{"id":27,"word":"我喜欢他","pinyin":"wǒ xǐ huān tā","meaning":"i like him"},' +
-    '{"id":28,"word":"我不喜欢他","pinyin":"wǒ bù xǐ huān tā","meaning":"i don\'t like him"}'+
+    '{"id":13,"word":"很高兴认识你！","pinyin":"hěn gāo xīng rèn shí nǐ","meaning":"nice to meet you"},' +
+    '{"id":14,"word":"我也是！","pinyin":"wǒ yě shì","meaning":"me too!"},' +
+    '{"id":15,"word":"你认识他吗","pinyin":"nǐ rèn shí tā má","meaning":"do you know him?"},' +
+    '{"id":16,"word":"我认识他","pinyin":"wǒ rèn shí tā","meaning":"i know him"},' +
+    '{"id":17,"word":"我不认识他","pinyin":"wǒ bù rèn shí tā","meaning":"i don\'t know him"},' +
+    '{"id":18,"word":"你喜欢他吗","pinyin":"nǐ xǐ huān tā má","meaning":"do you like him?"},' +
+    '{"id":19,"word":"我喜欢他","pinyin":"wǒ xǐ huān tā","meaning":"i like him"},' +
+    '{"id":20,"word":"我不喜欢他","pinyin":"wǒ bù xǐ huān tā","meaning":"i don\'t like him"}'+
     ']';
