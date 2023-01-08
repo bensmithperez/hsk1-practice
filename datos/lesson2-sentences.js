@@ -5,10 +5,10 @@ let listaCompletaDeDatos = '[' +
     '{"id":3,"word":"那是...","pinyin":"nà shì","meaning":"that is..."},'+
     '{"id":4,"word":"这是什么书？","pinyin":"zhè shì shénme shū","meaning":"what book is this?"},'+
     '{"id":5,"word":"这是书吗？","pinyin":"Zhè shì shū ma? ","meaning":"is this a book?"},'+
-    '{"id":6,"word":"这是书","pinyin":"Zhè shì shū ","meaning":"this is a book"},'+
+    '{"id":6,"word":"这是书。","pinyin":"Zhè shì shū ","meaning":"this is a book"},'+
     '{"id":7,"word":"这是手机吗？","pinyin":"zhè shì shǒujī ma? ","meaning":"Is this a cellphone?"},'+
-    '{"id":8,"word":"这是手机","pinyin":"Zhè shì shǒujī","meaning":"This is a cellphone."},'+
-    '{"id":9,"word":"这不是手机","pinyin":"zhè bùshì shǒujī","meaning":"This is not a cellphone."},'+
+    '{"id":8,"word":"这是手机。","pinyin":"Zhè shì shǒujī","meaning":"This is a cellphone."},'+
+    '{"id":9,"word":"这不是手机。","pinyin":"zhè bùshì shǒujī","meaning":"This is not a cellphone."},'+
     '{"id":10,"word":"这不是手机，这是笔。","pinyin":"zhè bùshì shǒujī, zhè shì bǐ.","meaning":"This is not a cellphone, this is a pen."},'+
     '{"id":11,"word":"这是英文书吗？","pinyin":"Zhè shì yīngwénshū ma? ","meaning":"Is this an english book?"},'+
     '{"id":12,"word":"这不是英文书，这是西班牙文书。","pinyin":"Zhè bùshì yīngwén shū, zhè shì xībānyá wén shū. ","meaning":"This is not an english book, this is a spanish book."},'+

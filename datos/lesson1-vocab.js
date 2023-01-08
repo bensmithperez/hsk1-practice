@@ -1,4 +1,4 @@
-let indiceMax = 26;
+let indiceMax = 34;
 let listaCompletaDeDatos = '[' +
     '{"id":1,"word":"高兴","pinyin":"gāoxìng","meaning":"happy"},' +
     '{"id":2,"word":"国","pinyin":"guó","meaning":"country; state; nation"},' +
@@ -25,7 +25,7 @@ let listaCompletaDeDatos = '[' +
     '{"id":23,"word":"是","pinyin":"shì","meaning":"yes"},' +
     '{"id":24,"word":"喜欢","pinyin":"xǐhuan","meaning":"like"},' +
     '{"id":25,"word":"不","pinyin":"bù","meaning":"No"},' +
-    '{"id":26,"word":"早上","pinyin":"zǎoshang","meaning":"Morning"}'+
+    '{"id":26,"word":"早上","pinyin":"zǎoshang","meaning":"Morning"},'+
     '{"id":27,"word":"美国","pinyin":"měi guó","meaning":"USA"},' +
     '{"id":28,"word":"英国","pinyin":"yīng guó","meaning":"the UK"},' +
     '{"id":29,"word":"法国","pinyin":"fǎ guó","meaning":"France"},' +
@@ -33,5 +33,5 @@ let listaCompletaDeDatos = '[' +
     '{"id":31,"word":"西班牙","pinyin":"xī bān yá","meaning":"Spain"},' +
     '{"id":32,"word":"日本","pinyin":"rì běn","meaning":"Japan"},' +
     '{"id":33,"word":"泰国","pinyin":"tài guó","meaning":"Thailand"},' +
-    '{"id":34,"word":"危地马拉","pinyin":"wēi dì mǎ lā","meaning":"Guatemala"},' +
+    '{"id":34,"word":"危地马拉","pinyin":"wēi dì mǎ lā","meaning":"Guatemala"}' +
     ']';
