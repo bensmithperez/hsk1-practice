@@ -97,11 +97,18 @@ nav>li{
 }
 
 .caracteres{
+    text-align: center;
     font-size: 3rem;
 }
 
 .definicion>p{
+    text-align: center;
+
     /* font-size: 2rem; */
+}
+
+.pinyin {
+    text-align: center;
 }
 
 .input{
@@ -109,6 +116,8 @@ nav>li{
 }
 
 .inputUsuario{
+    text-align: center;
+
     width: 100%;
     padding: 1em;
     font-size: 2rem;
