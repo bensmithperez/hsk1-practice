@@ -111,5 +111,5 @@ function verTecla(event) {
             botonChequear.click();
         }
     }
-    //falta alguna key para "no sé"
+    //falta alguna key para "I don't know"
 }

@@ -4,7 +4,7 @@ function cargarListaDeLinks(urlDeEstaPagina) {
         sub: 1,
         header: 2,
     }
-    let nombres = ["Inicio", "Números", "Lesson 1", "Vocab", "Sentences", "Lesson 2", "Vocab", "Sentences"];
+    let nombres = ["Home", "Numbers", "Lesson 1", "Vocab", "Sentences", "Lesson 2", "Vocab", "Sentences"];
 
     let urls = [
         { "index.html": tiposDeLink.main }, 
@@ -46,7 +46,7 @@ function cargarListaDeLinks(urlDeEstaPagina) {
             }
 
             // agrego clase para mostrar como seleccionado
-            if (urlPagina == urlDeEstaPagina) {
+            if (urlPagina == urlDeEstaPagina ) {
                 menuCompleto += ` item-menu-seleccionado`;
             }
 
