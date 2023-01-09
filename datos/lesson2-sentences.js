@@ -1,8 +1,8 @@
 let indiceMax = 27;
 let listaCompletaDeDatos = '[' +
     '{"id":1,"word":"这是什么？","pinyin":"zhè shì shénme?","meaning":"what is this?"},' +
-    '{"id":2,"word":"这是...","pinyin":"zhè shì","meaning":"this is..."},' +
-    '{"id":3,"word":"那是...","pinyin":"nà shì","meaning":"that is..."},'+
+    '{"id":2,"word":"这是。。。","pinyin":"zhè shì","meaning":"this is..."},' +
+    '{"id":3,"word":"那是。。。","pinyin":"nà shì","meaning":"that is..."},'+
     '{"id":4,"word":"这是什么书？","pinyin":"zhè shì shénme shū","meaning":"what book is this?"},'+
     '{"id":5,"word":"这是书吗？","pinyin":"Zhè shì shū ma? ","meaning":"is this a book?"},'+
     '{"id":6,"word":"这是书。","pinyin":"Zhè shì shū ","meaning":"this is a book"},'+

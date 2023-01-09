@@ -5,11 +5,11 @@ let listaCompletaDeDatos = '[' +
     '{"id":3,"word":"晚上好。","pinyin":"wǎn shàng hǎo","meaning":"good evening"},' +
     '{"id":4,"word":"再见。","pinyin":"zài jiàn","meaning":"see you again / good bye"},' +
     '{"id":5,"word":"你叫什么名字。","pinyin":"nǐ jiào shén me míng zì","meaning":"what is your name?"},' +
-    '{"id":6,"word":"我叫...","pinyin":"wǒ jiào ...","meaning":"my name is..."},' +
+    '{"id":6,"word":"我叫。。。","pinyin":"wǒ jiào ...","meaning":"my name is..."},' +
     '{"id":7,"word":"你多大了。","pinyin":"nǐ duō dà le","meaning":"how old are you?"},' +
-    '{"id":8,"word":"我...岁","pinyin":"wǒ ... suì","meaning":"im ... years old"},' +
-    '{"id":9,"word":"你是哪国人。","pinyin":"nǐ shì nǎ guó rén","meaning":"what country are you from?"},' +
-    '{"id":10,"word":"你是哪里人。","pinyin":"nǐ shì nǎ lǐ rén","meaning":"which place are you from?"},' +
+    '{"id":8,"word":"我。。。岁","pinyin":"wǒ ... suì","meaning":"im ... years old"},' +
+    '{"id":9,"word":"你是哪国人？","pinyin":"nǐ shì nǎ guó rén","meaning":"what country are you from?"},' +
+    '{"id":10,"word":"你是哪里人？","pinyin":"nǐ shì nǎ lǐ rén","meaning":"which place are you from?"},' +
     '{"id":11,"word":"我是中国人。","pinyin":"wǒ shì zhōng guó rén","meaning":"i\'m from china / i\'m chinese"},' +
     '{"id":12,"word":"我不是美国人。","pinyin":"wǒ bù shì měi guó rén","meaning":"i\'m not from china"},' +
     '{"id":13,"word":"很高兴认识你！","pinyin":"hěn gāo xīng rèn shí nǐ","meaning":"nice to meet you"},' +
