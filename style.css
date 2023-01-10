@@ -156,3 +156,13 @@ nav>li{
     margin: 1em;
     color: white;
 }
+
+.titulo-pagina-actual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-pagina-actual>p{
+    font-weight: bold;
+}

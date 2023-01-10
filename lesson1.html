@@ -10,10 +10,6 @@
 </head>
 
 <body>
-    <script>
-            const ID_LESSON = "lesson1";
-            const NOMBRE_LESSON = "Lesson 1";
-        </script>
     <header>
         <button class="menu-principal-btn" onclick="togglemenuPrincipal()">Main menu</button>
         <script>
@@ -25,14 +21,14 @@
         <nav id="menu-principal" class="menu-principal hidden"></nav>
         <script src="scripts/navbar.js"></script>
         <script>
-            cargarListaDeLinks(ID_LESSON+".html");
-            marcarHeader("pagina-"+ID_LESSON);
+            cargarListaDeLinks("lesson1.html");
+            marcarHeader("pagina-lesson1");
         </script>
     </header>
     <main>
         <nav id="menu-de-seccion" class="menu-de-seccion">
             <script>
-                crearMenuDeSeccion(ID_LESSON);
+                crearMenuDeSeccion("lesson1");
             </script>
         </nav>
     </main>
