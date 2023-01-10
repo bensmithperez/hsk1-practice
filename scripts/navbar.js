@@ -4,7 +4,7 @@ const tiposDeLink = {
     header: 2,
 }
 
-let nombres = ["Home", "Numbers", "Lesson 1", "Vocab", "Sentences", "Lesson 2", "Vocab", "Sentences"];
+let nombres = ["Home", "Numbers", "Lesson 1", "Vocab", "Sentences", "Lesson 2", "Vocab", "Sentences", "Lesson 3", "Vocab", "Sentences"];
 
 let urls = [
     { "index.html": tiposDeLink.main },
@@ -14,7 +14,10 @@ let urls = [
     { "lesson1-sentences.html": tiposDeLink.sub },
     { "lesson2.html": tiposDeLink.header },
     { "lesson2-vocab.html": tiposDeLink.sub },
-    { "lesson2-sentences.html": tiposDeLink.sub }];
+    { "lesson2-sentences.html": tiposDeLink.sub },
+    { "lesson3.html": tiposDeLink.header },
+    { "lesson3-vocab.html": tiposDeLink.sub },
+    { "lesson3-sentences.html": tiposDeLink.sub }];
 
 function cargarListaDeLinks(urlDeEstaPagina) {
     let menuCompleto = ``;
