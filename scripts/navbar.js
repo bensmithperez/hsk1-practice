@@ -1,85 +1,50 @@
-const tiposDeLink = {
-    main: 0,
-    sub: 1,
-    header: 2,
+function navAgregarMain(titulo, url) {
+    return `<a class="link-main" href="` + url + `">` + titulo + `</a>`;
 }
 
-let nombres = ["Home", "Numbers", "Lesson 1", "Vocab", "Sentences", "Lesson 2", "Vocab", "Sentences", "Lesson 3", "Vocab", "Sentences"];
+function navAgregarSub(titulo, url, tipoAnterior) {
+    let respuestaFinal = ``;
+    if (tipoAnterior == tiposDeLink.header) {
+        respuestaFinal += `<div class="grupo-de-sub-links">`;
+    }
+    respuestaFinal += `<a class="link-sub" href="` + url + `">` + titulo + `</a>`;
+    return respuestaFinal;
+}
 
-let urls = [
-    { "index.html": tiposDeLink.main },
-    { "numeros.html": tiposDeLink.main },
-    { "lesson1.html": tiposDeLink.header },
-    { "lesson1-vocab.html": tiposDeLink.sub },
-    { "lesson1-sentences.html": tiposDeLink.sub },
-    { "lesson2.html": tiposDeLink.header },
-    { "lesson2-vocab.html": tiposDeLink.sub },
-    { "lesson2-sentences.html": tiposDeLink.sub },
-    { "lesson3.html": tiposDeLink.header },
-    { "lesson3-vocab.html": tiposDeLink.sub },
-    { "lesson3-sentences.html": tiposDeLink.sub }];
+function navAgregarHeader(titulo, tipoAnterior) {
+    let respuestaFinal = ``;
+    if (tipoAnterior == tiposDeLink.sub) {
+        respuestaFinal += `</div>`;
+    }
+    respuestaFinal += `<h2 class="link-header">` + titulo + `</h2>`;
+    return respuestaFinal;
+}
 
-function cargarListaDeLinks(urlDeEstaPagina) {
-    let menuCompleto = ``;
-    index = 0;
+function armarMenuPrincipal() {
+    let menuPrincipal = ``;
+    let tipoAnterior = tiposDeLink.main;
     for (const url of urls) {
-        for (const [urlPagina, tipoLink] of Object.entries(url)) {
-            urlPorUsar = "";
-            idParaElBanco = "pagina-" + urlPagina.replace(".html", "");
-            // pongo sin urls los que son headers o la url actual
-            // if (urlPagina == urlDeEstaPagina || tipoLink == tiposDeLink.header) {
-            // urlPorUsar = "#";
-            // } else {
-            urlPorUsar = urlPagina;
-            // }
-
-            menuCompleto += `<a id="` + idParaElBanco + `" href="` + urlPorUsar + `" class="menu-principal-link`;
-
-            // agrego clases css a los que corresponda
-            switch (tipoLink) {
+        let urlNombre = url[0];
+        let urlUrl = url[1];
+        let urlTipo = url[2];
+        if (urlNombre != "Home") {
+            switch (urlTipo) {
                 case tiposDeLink.main:
-                    menuCompleto += ``;
+                    menuPrincipal += navAgregarMain(urlNombre, urlUrl);
                     break;
                 case tiposDeLink.sub:
-                    menuCompleto += ` menu-principal-es-sub`
+                    menuPrincipal += navAgregarSub(urlNombre, urlUrl, tipoAnterior);
                     break;
                 case tiposDeLink.header:
-                    menuCompleto += ` menu-principal-es-header`;
+                    menuPrincipal += navAgregarHeader(urlNombre, tipoAnterior);
                     break;
                 default:
-                    menuCompleto += ``;
+                // code block
             }
-
-            // agrego clase para mostrar como seleccionado
-            if (urlPagina == urlDeEstaPagina) {
-                menuCompleto += ` item-menu-seleccionado`;
-            }
-
-            menuCompleto += `">` + nombres[index] + `</a>`;
-
-            index += 1;
-            console.log(urlDeEstaPagina, tipoLink, idParaElBanco)
+            tipoAnterior = urlTipo;
         }
     }
-    document.getElementById("menu-principal").innerHTML = menuCompleto;
+    document.getElementById("menuPrincipal").innerHTML = menuPrincipal;
 }
 
-function marcarHeader(id) {
-    document.getElementById(id).classList.add("header-seleccionado");
-}
-
-function crearMenuDeSeccion(id) {
-    menuSeccion = ``;
-    index = 0;
-    for (const url of urls) {
-        for (const [urlPagina, tipoLink] of Object.entries(url)) {
-            console.log(urlPagina)
-            if (urlPagina.includes(id + "-")) {
-                console.log("sip")
-                menuSeccion += `<a href="` + urlPagina + `" class="menu-seccion-link">` + nombres[index] + `</a>`;
-            }
-            index += 1;
-        }
-    }
-    document.getElementById("menu-de-seccion").innerHTML = menuSeccion;
-}
+armarMenuPrincipal();

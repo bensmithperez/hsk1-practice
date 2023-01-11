@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuPrincipal > a, .grupo-de-sub-links > a{
+    text-decoration: none;
+    background-color: #333333;
+    color: white;
+    padding: 1em;
+    margin: 1em .4em;
+}
+
+.grupo-de-sub-links {
+    display: flex;
+}
+
+.link-header{
+    margin-top: 1em;
+}

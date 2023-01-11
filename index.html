@@ -1,31 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index-style.css">
 </head>
-
 <body>
-    <header>
-        <button class="menu-principal-btn" onclick="togglemenuPrincipal()">Main menu</button>
-        <script>
-            function togglemenuPrincipal() {
-                var menuPrincipal = document.querySelector(".menu-principal");
-                menuPrincipal.classList.toggle("hidden");
-            }
-        </script>
-        <nav id="menu-principal" class="menu-principal"></nav>
-        <script src="scripts/navbar.js"></script>
-        <script>cargarListaDeLinks("index.html");</script>
-    </header>
+    <!-- cargar menu con js usando lista de páginas -->
     <main>
+        <nav id="menuPrincipal" class="menuPrincipal">
+        </nav>
     </main>
-    <!-- <script src="./datos/todoHsk1.js"></script> -->
-    <script src="scripts/logica.js"></script>
+    <script src="./scripts/datosGenerales.js"></script>
+    <script src="./scripts/navbar.js"></script>
 </body>
-
 </html>
