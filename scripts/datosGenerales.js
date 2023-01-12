@@ -18,5 +18,5 @@ let urls = [
     ["Sentences","quiz.html?lesson3-sentences",tiposDeLink.sub]
 ];
 
-let indiceMax = -1;
+var indiceMax = -1;
 let listaCompletaDeDatos = []; 

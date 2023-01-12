@@ -1,7 +1,7 @@
 const obj = JSON.parse(listaCompletaDeDatos);
 
 let indiceActual = 0;
-let indiceMax = obj.length;
+var indiceMax = obj.length;
 let indiceMin = 0;
 let ordenDeTarjetas = new Set();
 
