@@ -1,4 +1,4 @@
-let lesson2_vocab_indiceMax = 28;
+// let lesson2_vocab_indiceMax = 28;
 let lesson2_vocab_listaCompletaDeDatos = '[' +
     '{"id":1,"word":"这","pinyin":"zhè","meaning":"this"},' +
     '{"id":2,"word":"那","pinyin":"nà","meaning":"that"},' +

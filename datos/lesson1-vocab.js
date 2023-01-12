@@ -1,4 +1,4 @@
-let lesson1_vocab_indiceMax = 34;
+// let lesson1_vocab_indiceMax = 34;
 let lesson1_vocab_listaCompletaDeDatos = '[' +
     '{"id":1,"word":"高兴","pinyin":"gāoxìng","meaning":"happy"},' +
     '{"id":2,"word":"国","pinyin":"guó","meaning":"country; state; nation"},' +
