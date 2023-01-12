@@ -1,4 +1,4 @@
-let lesson3_vocab_indiceMax = 14;
+let lesson3_vocab_indiceMax = 16;
 let lesson3_vocab_listaCompletaDeDatos = '[' +
     '{"id":1,"word":"家","pinyin":"jiā","meaning":"home, house"},' +
     '{"id":2,"word":"学校","pinyin":"xuéxiào","meaning":"school"},' +
@@ -13,5 +13,7 @@ let lesson3_vocab_listaCompletaDeDatos = '[' +
     '{"id":11,"word":"现在","pinyin":"xiànzài","meaning":"right now"},' +
     '{"id":12,"word":"今天","pinyin":"jīntiān","meaning":"today"},' +
     '{"id":13,"word":"明天","pinyin":"míngtiān","meaning":"tomorrow"},' +
-    '{"id":14,"word":"去","pinyin":"qù","meaning":"to go somewhere"}' +
+    '{"id":14,"word":"去","pinyin":"qù","meaning":"to go somewhere"},' +
+    '{"id":15,"word":"这里","pinyin":"zhèlǐ","meaning":"this place"},' +
+    '{"id":16,"word":"那里","pinyin":"nàlǐ","meaning":"there"}' +
     ']';
