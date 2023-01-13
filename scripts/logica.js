@@ -1,4 +1,5 @@
-const obj = JSON.parse(listaCompletaDeDatos);
+const obj = listaCompletaDeDatos;
+// const obj = JSON.parse(listaCompletaDeDatos);
 
 let indiceActual = 0;
 var indiceMax = obj.length;

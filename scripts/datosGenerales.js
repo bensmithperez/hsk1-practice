@@ -15,7 +15,10 @@ let urls = [
     ["Sentences","quiz.html?lesson2-sentences",tiposDeLink.sub],
     ["Lesson 3","",tiposDeLink.header],
     ["Vocab","quiz.html?lesson3-vocab",tiposDeLink.sub],
-    ["Sentences","quiz.html?lesson3-sentences",tiposDeLink.sub]
+    ["Sentences","quiz.html?lesson3-sentences",tiposDeLink.sub],
+    ["Lesson 4","",tiposDeLink.header],
+    ["Vocab","quiz.html?lesson4-vocab",tiposDeLink.sub],
+    ["Sentences","quiz.html?lesson4-sentences",tiposDeLink.sub]
 ];
 
 var indiceMax = -1;

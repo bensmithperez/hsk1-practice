@@ -48,6 +48,7 @@ function initQuizActual(quizActual) {
 
     nombreVariable = transformarEnNombreDeVariable(quizActual);
     // indiceMax = eval(nombreVariable+"_indiceMax");
+    console.log(nombreVariable)
     listaCompletaDeDatos = eval(nombreVariable+"_listaCompletaDeDatos");
 }
 
