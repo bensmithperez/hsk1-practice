@@ -17,5 +17,8 @@ let lesson4_vocab_listaCompletaDeDatos = [
     { "id": 16, "word": "晚饭", "pinyin": "wǎnfàn", "meaning": "dinner" },
     { "id": 17, "word": "喝咖啡", "pinyin": "hē kāfēi", "meaning": "to drink coffee." },
     { "id": 18, "word": "水", "pinyin": "shuǐ", "meaning": "water" },
-    { "id": 19, "word": "喝水", "pinyin": "hē shuǐ", "meaning": "to drink water" }
+    { "id": 19, "word": "喝水", "pinyin": "hē shuǐ", "meaning": "to drink water" },
+    { "id": 20, "word": "觉", "pinyin": "jué", "meaning": "sleep (noun)" },
+    { "id": 21, "word": "回", "pinyin": "huí", "meaning": "to go back" },
+    { "id": 22, "word": "来", "pinyin": "lái", "meaning": "to come to" }
 ];
