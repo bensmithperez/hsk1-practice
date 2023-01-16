@@ -11,7 +11,7 @@ let listaCompletaDeDatos = [
     { "id": 9, "word": "你是哪国人？", "pinyin": "nǐ shì nǎ guó rén", "meaning": "what country are you from?" },
     { "id": 10, "word": "你是哪里人？", "pinyin": "nǐ shì nǎ lǐ rén", "meaning": "which place are you from?" },
     { "id": 11, "word": "我是中国人。", "pinyin": "wǒ shì zhōng guó rén", "meaning": "i'm from china / i'm chinese" },
-    { "id": 12, "word": "我不是美国人。", "pinyin": "wǒ bù shì měi guó rén", "meaning": "i'm not from china" },
+    { "id": 12, "word": "我不是美国人。", "pinyin": "wǒ bù shì měi guó rén", "meaning": "i'm not from the USA." },
     { "id": 13, "word": "很高兴认识你！", "pinyin": "hěn gāo xīng rèn shí nǐ", "meaning": "nice to meet you" },
     { "id": 14, "word": "我也是！", "pinyin": "wǒ yě shì", "meaning": "me too!" },
     { "id": 15, "word": "你认识他吗？", "pinyin": "nǐ rèn shí tā má", "meaning": "do you know him?" },
