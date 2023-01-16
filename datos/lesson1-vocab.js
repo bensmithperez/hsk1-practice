@@ -25,7 +25,7 @@ let listaCompletaDeDatos = [
     { "id": 23, "word": "是", "pinyin": "shì", "meaning": "yes" },
     { "id": 24, "word": "喜欢", "pinyin": "xǐhuan", "meaning": "like" },
     { "id": 25, "word": "不", "pinyin": "bù", "meaning": "No" },
-    { "id": 26, "word": "早上", "pinyin": "zǎoshang", "meaning": "Morning" }, +
+    { "id": 26, "word": "早上", "pinyin": "zǎoshang", "meaning": "Morning" },
     { "id": 27, "word": "美国", "pinyin": "měi guó", "meaning": "USA" },
     { "id": 28, "word": "英国", "pinyin": "yīng guó", "meaning": "the UK" },
     { "id": 29, "word": "法国", "pinyin": "fǎ guó", "meaning": "France" },
