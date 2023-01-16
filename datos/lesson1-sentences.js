@@ -1,5 +1,5 @@
 // let lesson1_sentences_indiceMax = 20;
-let lesson1_sentences_listaCompletaDeDatos = [
+let listaCompletaDeDatos = [
     { "id": 1, "word": "你好。", "pinyin": "nǐ hǎo", "meaning": "hello" },
     { "id": 2, "word": "早上好。", "pinyin": "zǎo shàng hǎo", "meaning": "good morning" },
     { "id": 3, "word": "晚上好。", "pinyin": "wǎn shàng hǎo", "meaning": "good evening" },

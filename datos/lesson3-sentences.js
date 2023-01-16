@@ -1,5 +1,5 @@
 // let lesson3_sentences_indiceMax = 42;
-let lesson3_sentences_listaCompletaDeDatos = [
+let listaCompletaDeDatos = [
     { "id": 1, "word": "你在哪里？", "pinyin": "nǐ zài nǎlǐ", "meaning": "where are you?" },
     { "id": 2, "word": "我在美国。", "pinyin": "wǒ zài měiguó", "meaning": "I'm in the USA." },
     { "id": 3, "word": "现在你在哪里？", "pinyin": "xiànzài nǐ zài nǎlǐ?", "meaning": "Where are you now?" },

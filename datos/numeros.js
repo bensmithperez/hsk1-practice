@@ -1,5 +1,5 @@
 // let numeros_indiceMax = 12;
-let numeros_listaCompletaDeDatos = [
+let listaCompletaDeDatos = [
     { "id": 1, "word": "零｜〇", "pinyin": "líng ｜ líng", "meaning": "zero" },
     { "id": 2, "word": "一", "pinyin": "yī", "meaning": "One" },
     { "id": 3, "word": "二", "pinyin": "èr", "meaning": "Two" },

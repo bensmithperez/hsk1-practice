@@ -1,4 +1,4 @@
-let lesson4_vocab_listaCompletaDeDatos = [
+let listaCompletaDeDatos = [
     { "id": 1, "word": "吃", "pinyin": "chī", "meaning": "eat" },
     { "id": 2, "word": "饭", "pinyin": "fàn", "meaning": "food or rice" },
     { "id": 3, "word": "吃饭", "pinyin": "chīfàn", "meaning": "to eat" },

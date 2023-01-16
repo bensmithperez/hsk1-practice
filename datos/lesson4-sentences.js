@@ -1,4 +1,4 @@
-let lesson4_sentences_listaCompletaDeDatos = [
+let listaCompletaDeDatos = [
     { "id": 1, "word": "你在做什么？", "pinyin": "Nǐ zài zuò shénme?", "meaning": "What are you doing?" },
     { "id": 2, "word": "我在学习汉语。", "pinyin": "Wǒ zài xuéxí hànyǔ.", "meaning": "I'm studying chinese." },
     { "id": 3, "word": "我再买东西。", "pinyin": "Wǒ zài mǎi dōngxī.", "meaning": "I'm shopping." },

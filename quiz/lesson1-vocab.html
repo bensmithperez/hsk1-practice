@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <link rel="stylesheet" href="quiz-style.css">
+    <link rel="stylesheet" href="../quiz-style.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="./index.html">back</a>
+            <a href="../index.html">back</a>
         </nav>
     </header>
     <main>
         <header class="quiz-info">
-            <h1 class="titulo-quiz" id="titulo-quiz"></h1>
-            <h2 class="subtitulo-quiz" id="subtitulo-quiz"></h2>
+            <h1 class="titulo-quiz" id="titulo-quiz">Lesson1</h1>
+            <h2 class="subtitulo-quiz" id="subtitulo-quiz">Vocab</h2>
             <div class="tarjeta-actual" id="tarjeta-actual">
                 <p></p>
             </div>
@@ -42,18 +42,9 @@
             <button class="botones_boton boton_siguiente esconder_boton" id="boton_siguiente" onclick="clickEnSiguiente()">Next</button>
         </div>
     </main>
-    <script src="./scripts/datosGenerales.js"></script>
-    <!-- todos los quizes van acá -->
-    <script src="./datos/numeros.js"></script>
-    <script src="./datos/lesson1-vocab.js"></script>
-    <script src="./datos/lesson1-sentences.js"></script>
-    <script src="./datos/lesson2-vocab.js"></script>
-    <script src="./datos/lesson2-sentences.js"></script>
-    <script src="./datos/lesson3-vocab.js"></script>
-    <script src="./datos/lesson3-sentences.js"></script>
-    <script src="./datos/lesson4-vocab.js"></script>
-    <script src="./datos/lesson4-sentences.js"></script>
-    <script src="./scripts/elegirQuiz.js"></script>
-    <script src="./scripts/logica.js"></script>
+    <script src="../scripts/datosGenerales.js"></script>
+    <!-- quiz actual -->
+    <script src="../datos/lesson1-vocab.js"></script>
+<script src="../scripts/logica.js"></script>
 </body>
 </html>

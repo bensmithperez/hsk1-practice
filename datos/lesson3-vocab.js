@@ -1,5 +1,5 @@
 // let lesson3_vocab_indiceMax = 16;
-let lesson3_vocab_listaCompletaDeDatos = [
+let listaCompletaDeDatos = [
     { "id": 1, "word": "家", "pinyin": "jiā", "meaning": "home, house" },
     { "id": 2, "word": "学校", "pinyin": "xuéxiào", "meaning": "school" },
     { "id": 3, "word": "公司", "pinyin": "gōngsī", "meaning": "company, office" },

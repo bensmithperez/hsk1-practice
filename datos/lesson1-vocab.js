@@ -1,5 +1,5 @@
 // let lesson1_vocab_indiceMax = 34;
-let lesson1_vocab_listaCompletaDeDatos = [
+let listaCompletaDeDatos = [
     { "id": 1, "word": "高兴", "pinyin": "gāoxìng", "meaning": "happy" },
     { "id": 2, "word": "国", "pinyin": "guó", "meaning": "country; state; nation" },
     { "id": 3, "word": "很", "pinyin": "hěn", "meaning": "very" },
