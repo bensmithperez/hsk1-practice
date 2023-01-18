@@ -80,6 +80,7 @@ contenidoHTMLIndex = """<!DOCTYPE html>
         {linksDelNavIndex}
         </nav>
     </main>
+    <footer>With ❤️ by <a href="https://bensmithperez.com">@bensmithperez</a></footer>
     <script src="./scripts/datosGenerales.js"></script>
 </body>
 </html>
