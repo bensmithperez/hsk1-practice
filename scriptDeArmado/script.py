@@ -6,11 +6,14 @@
 
 import os
 
+# CONSTANTES
 tituloQuiz = ""
 subtituloQuiz = ""
 pathQuizActual = ""
+pathDeDatos = "./datos/"
+pathDeQuiz = "./quiz/"
 
-contenidoHTML = """<!DOCTYPE html>
+contenidoHTMLQuiz = """<!DOCTYPE html>
 <html lang=\"en\">
 <head>
     <meta charset=\"UTF-8\">
@@ -61,15 +64,39 @@ contenidoHTML = """<!DOCTYPE html>
 </body>
 </html>"""
 
-pathDeDatos = "./datos/"
-pathDeQuiz = "./quiz/"
+contenidoHTMLIndex = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index-style.css">
+</head>
+<body>
+    <!-- cargar menu con js usando lista de páginas -->
+    <main>
+        <nav id="menuPrincipal" class="menuPrincipal">
+        {linksDelNavIndex}
+        </nav>
+    </main>
+    <script src="./scripts/datosGenerales.js"></script>
+</body>
+</html>
+"""
 
+def borrar_quizes_actuales():
+    listaDeArchivos = os.listdir(pathDeQuiz)
+    for nombreArchivo in sorted(listaDeArchivos):
+        os.remove(os.path.join(pathDeQuiz, nombreArchivo))
+
+# QUIZES
 def armar_quizes():
     listaDeArchivos = os.listdir(pathDeDatos)
     for nombreArchivo in sorted(listaDeArchivos):
         if nombreArchivo.endswith(".js"):
-            pathQuizActual = "../quiz/"+nombreArchivo
-            pathDatosActual = "../datos/"+nombreArchivo
+            pathQuizActual = "."+pathDeQuiz+nombreArchivo
+            pathDatosActual = "."+pathDeDatos+nombreArchivo
             print(pathQuizActual)
             with open(os.path.join(pathDeQuiz, pathQuizActual.replace(".js", ".html")), "w") as archivoQuiz:
                 partesDelTitulo = separar_titulo_de_subtitulo(nombreArchivo.replace(".js",""))
@@ -77,11 +104,60 @@ def armar_quizes():
                 if (len(partesDelTitulo) == 2):
                     tituloQuiz = transformar_en_titulo(partesDelTitulo[0])
                     subtituloQuiz = transformar_en_titulo(partesDelTitulo[1])
-                else:
-                    tituloQuiz = transformar_en_titulo(partesDelTitulo[0])
-                    subtituloQuiz = ""
-                archivoQuiz.write(contenidoHTML.format(tituloQuiz=tituloQuiz,subtituloQuiz=subtituloQuiz,pathQuizActual=pathDatosActual))
+                    # tipoQuiz = transformar_en_titulo(partesDelTitulo[2])
+                    archivoQuiz.write(contenidoHTMLQuiz.format(tituloQuiz=tituloQuiz,subtituloQuiz=subtituloQuiz,pathQuizActual=pathDatosActual))
+                # else:
+                #     tituloQuiz = transformar_en_titulo(partesDelTitulo[0])
+                #     subtituloQuiz = ""
                 # print(contenidoHTML + pathQuizActual + contenidoParte2)
+
+# INDEX PAGE
+def armar_index():
+    listaDeQuizesCreados = os.listdir(pathDeQuiz)
+    templateDeLinkHeader = "<h2 class=\"link-header\">{tituloSeccion}</h2>"
+    templateInicioGrupoSubs = "<div class=\"grupo-de-sub-links\">"
+    templateFinGrupoSubs = "</div>"
+    templateDeLinkSub = "<a class=\"link-sub\" href=\"quiz/{nombreDelArchivo}\">{tituloQuiz}</a>"
+    linksDelNavIndex = ""
+    tituloAnterior = ""
+    listaDeLinksCategorizados = []
+    categorias = {}
+    menuCompleto = ""
+    for nombreArchivo in sorted(listaDeQuizesCreados):
+        seccion = nombreArchivo.split("-")[0]
+        if seccion not in categorias:
+            categorias[seccion] = []
+        categorias[seccion].append(nombreArchivo)
+
+    for seccion in categorias:
+        print(seccion)
+        tituloSeccion = transformar_en_titulo(seccion)
+        menuCompleto += templateDeLinkHeader.format(tituloSeccion=tituloSeccion)
+        menuCompleto += templateInicioGrupoSubs
+        for pathCompletoArchivo in categorias[seccion]:
+            print(pathCompletoArchivo)
+            partesDelTitulo = separar_titulo_de_subtitulo(pathCompletoArchivo.replace(".html",""))
+
+            if (len(partesDelTitulo) == 2):
+                tituloQuiz = transformar_en_titulo(partesDelTitulo[0])
+                subtituloQuiz = transformar_en_titulo(partesDelTitulo[1])
+                menuCompleto += templateDeLinkSub.format(nombreDelArchivo=pathCompletoArchivo,tituloQuiz=subtituloQuiz)
+
+        menuCompleto += templateFinGrupoSubs
+    with open("./index.html", "w") as archivoIndex:
+        archivoIndex.write(contenidoHTMLIndex.format(linksDelNavIndex=menuCompleto))
+    # for nombreArchivo in sorted(listaDeQuizesCreados):
+    #     partesDelTitulo = separar_titulo_de_subtitulo(nombreArchivo.replace(".html",""))
+                
+    #     if (len(partesDelTitulo) == 3):
+    #         tituloQuiz = transformar_en_titulo(partesDelTitulo[0])
+    #         subtituloQuiz = transformar_en_titulo(partesDelTitulo[1])
+    #         tipoQuiz = transformar_en_titulo(partesDelTitulo[2])
+
+        # else:
+        #     tituloQuiz = transformar_en_titulo(partesDelTitulo[0])
+        #     subtituloQuiz = ""
+
 
 def separar_titulo_de_subtitulo(quiz_actual):
     return quiz_actual.split("-")
@@ -90,4 +166,7 @@ def transformar_en_titulo(titulo):
     titulo = titulo[0].upper() + titulo[1:]
     return titulo
 
+
+borrar_quizes_actuales()
 armar_quizes()
+armar_index()
