@@ -35,8 +35,8 @@ let listaCompletaDeDatos = [
     { "id": 33, "word": "去公司，我很高兴。", "pinyin": "qù gōngsī, wǒ hěn gāoxìng", "meaning": "I'm happy going to the office." },
     { "id": 34, "word": "去公司，我不高兴。", "pinyin": "qù gōngsī, wǒ bù gāoxìng", "meaning": "I'm not happy going to the office." },
     { "id": 35, "word": "我公司叫苹果公司。", "pinyin": "wǒ gōngsī jiào píngguǒ gōngsī", "meaning": "My company is called Apple Company." },
-    { "id": 36, "word": "那是手机公司。", "pinyin": "nà shì shǒujī gōngsī nàlǐ", "meaning": "That is a cellphone company." },
-    { "id": 37, "word": "那里不是学校，那里是你家。", "pinyin": "bùshì xuéxiào, nàlǐ shì nǐ jiā", "meaning": "That is not a school, that is your house." },
+    { "id": 36, "word": "那是手机公司。", "pinyin": "nà shì shǒujī gōngsī", "meaning": "That is a cellphone company." },
+    { "id": 37, "word": "那里不是学校，那里是你家。", "pinyin": " nàlǐ bùshì xuéxiào, nàlǐ shì nǐ jiā", "meaning": "That is not a school, that is your house." },
     { "id": 38, "word": "现在那里不是早上。", "pinyin": "xiànzài nàlǐ bùshì zǎoshang", "meaning": "Right now, it's not morning at your place." },
     { "id": 39, "word": "现在这里是早上。", "pinyin": "xiànzài zhèlǐ shì zǎoshang", "meaning": "Right now, it's morning here." },
     { "id": 40, "word": "现在这里是晚上。", "pinyin": "xiànzài zhèlǐ shì wǎnshàng", "meaning": "Right now, it's the evening here." }
