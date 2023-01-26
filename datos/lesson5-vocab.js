@@ -30,5 +30,8 @@ let listaCompletaDeDatos = [
     { "id": 29, "word": "猫", "pinyin": "māo", "meaning": "cat" },
     { "id": 30, "word": "车", "pinyin": "chē", "meaning": "car" },
     { "id": 31, "word": "钱", "pinyin": "qián", "meaning": "money" },
-    { "id": 32, "word": "谁", "pinyin": "shéi", "meaning": "who" }
+    { "id": 32, "word": "谁", "pinyin": "shéi", "meaning": "who" },
+    { "id": 33, "word": "没有人", "pinyin": "méiyǒu rén", "meaning": "nobody" },
+    { "id": 34, "word": "做饭", "pinyin": "zuò fàn", "meaning": "to cook" },
+    { "id": 35, "word": "知道", "pinyin": "zhīdào", "meaning": "to know" }
 ];
