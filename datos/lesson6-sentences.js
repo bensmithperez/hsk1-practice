@@ -1,7 +1,7 @@
 let listaCompletaDeDatos = [
     { "id": 1, "word": "桌子上有一本书。", "pinyin": "Zhuōzi shàng yǒuyī běn shū", "meaning": "There's a book on the table." },
     { "id": 2, "word": "桌子下有一个孩子。", "pinyin": "Zhuōzi xià yǒu yīgè háizi", "meaning": "There's a kid under the table." },
-    { "id": 3, "word": "房间里有一长疮。", "pinyin": "Fángjiān li yǒuyī cháng chuāng", "meaning": "There's a bed inside the room." },
+    { "id": 3, "word": "房间里有一张床。", "pinyin": "Fángjiān li yǒuyī cháng chuāng", "meaning": "There's a bed inside the room." },
     { "id": 4, "word": "房间里有一台电脑。", "pinyin": "Fángjiān li yǒuyī tái diànnǎo", "meaning": "There's a computer inside the room." },
     { "id": 5, "word": "桌子上有一台电脑。", "pinyin": "Zhuōzi shàng yǒuyī tái diànnǎo", "meaning": "There's a computer on the table." },
     { "id": 6, "word": "房间外有一个人。", "pinyin": "Fángjiān wài yǒuyī gèrén", "meaning": "There's a person outside of the room." },
